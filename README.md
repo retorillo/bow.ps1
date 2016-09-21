@@ -1,17 +1,17 @@
 # Run Linux(BoW) commands on Windows PowerShell
 
-Linux (BoW / Bash on Ubuntu on Windows) `bash -c` aliases 
+Linux (BoW/Bash on Ubuntu on Windows) `bash -c` aliases 
 and Windows-BoW path conversion for Windows PowerShell.
 
-For example, if you want to `bash -c vim` to edit PowerShell configuration file
-`$PROFILE`, you must enter full path of BoW.
+For example, if want to run `bash -c vim` to edit PowerShell configuration
+file `$PROFILE`, you must build long path of BoW. :fearful:
 
 ```
-PS> bash -c "vim /mnt/c/Users/$USERNAME/Documents/..."
+PS> bash -c "vim /mnt/c/Users/$env:USERNAME/Documents/..."
 ```
 
 Aliases and path-conversion provided by this script might be able to free you
-from bothersome work.
+from bothersome work. :innocent:
 
 ```
 PS> vim $PROFILE
