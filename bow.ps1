@@ -35,6 +35,8 @@ function start_grep() { start_x 'grep' $args }
 set-alias grep start_grep
 function start_ssh() { start_x 'ssh' $args }
 set-alias ssh start_ssh
+function start_scp() { start_x 'scp' $args }
+set-alias scp start_scp
 function start_git() { start_x 'git' $args }
 set-alias git start_git
 function start_bc() { start_x 'bc' $args }
